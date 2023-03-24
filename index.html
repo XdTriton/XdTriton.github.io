@@ -1,0 +1,239 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>generere </title>
+</head>
+<body>
+
+    <h1>Generere tilfeldige egenskaper</h1>
+    <button onclick="generereWarriorEgenskap()">Warrior</button>
+    <button onclick="genererePaladinEgenskap()">Paladin</button>
+    <button onclick="generereHunterEgenskap()">Hunter</button>
+    <button onclick="generererRogueEgenskap()">Rogue</button>
+    <button onclick="genererePriestEgenskap()">Priest</button>
+    <button onclick="generereShamanEgenskap()">Shaman</button>
+    <button onclick="generereMageEgenskap()">Mage</button>
+    <button onclick="generereWarlockEgenskap()">Warlock</button>
+    <button onclick="slettListe()">Slett</button>
+    <h3>Egenskaper:</h3>
+    <Ol id="egenskap"></Ol>
+
+
+
+<script>
+
+
+function generereWarriorEgenskap(){
+    let strengthMax = 100
+    let strengthMin = 40
+    let agilityMax = 90
+    let agilityMin = 5
+    let staminaMax = 80
+    let staminaMin = 45
+    let intellectMax = 60
+    let intellectMin = 5
+    let spiritMax = 50
+    let spiritMin = 1
+
+    let resultat = minRandom(strengthMax,strengthMin,agilityMax,agilityMin,staminaMax,staminaMin,intellectMax,intellectMin,spiritMax,spiritMin)
+
+    let nyEgenskap = document.createElement("li")
+
+    nyEgenskap.innerHTML = "warrior: " + resultat
+
+    document.getElementById("egenskap").appendChild(nyEgenskap)
+}
+
+function genererePaladinEgenskap(){
+    let strengthMax = 80
+    let strengthMin = 10
+    let agilityMax = 80
+    let agilityMin = 10
+    let staminaMax = 70
+    let staminaMin = 35
+    let intellectMax = 90
+    let intellectMin = 15
+    let spiritMax = 80
+    let spiritMin = 25
+
+
+    let resultat = minRandom(strengthMax,strengthMin,agilityMax,agilityMin,staminaMax,staminaMin,intellectMax,intellectMin,spiritMax,spiritMin)
+
+    let nyEgenskap = document.createElement("li")
+
+    nyEgenskap.innerHTML = "Paladin: " + resultat
+
+    document.getElementById("egenskap").appendChild(nyEgenskap)
+}
+
+function generereHunterEgenskap(){
+    let strengthMax = 90
+    let strengthMin = 15
+    let agilityMax = 85
+    let agilityMin = 15
+    let staminaMax = 95
+    let staminaMin = 12
+    let intellectMax = 85
+    let intellectMin = 12
+    let spiritMax = 60
+    let spiritMin = 20
+
+
+    let resultat = minRandom(strengthMax,strengthMin,agilityMax,agilityMin,staminaMax,staminaMin,intellectMax,intellectMin,spiritMax,spiritMin)
+
+    let nyEgenskap = document.createElement("li")
+
+    nyEgenskap.innerHTML = "Hunter: " + resultat
+
+    document.getElementById("egenskap").appendChild(nyEgenskap)
+}
+
+function generererRogueEgenskap(){
+    let strengthMax = 70
+    let strengthMin = 5
+    let agilityMax = 75
+    let agilityMin = 10
+    let staminaMax = 75
+    let staminaMin = 8
+    let intellectMax = 70
+    let intellectMin = 8
+    let spiritMax = 80
+    let spiritMin = 30
+
+
+    let resultat = minRandom(strengthMax,strengthMin,agilityMax,agilityMin,staminaMax,staminaMin,intellectMax,intellectMin,spiritMax,spiritMin)
+
+    let nyEgenskap = document.createElement("li")
+
+    nyEgenskap.innerHTML = "Rogue: " + resultat
+
+    document.getElementById("egenskap").appendChild(nyEgenskap)
+}
+
+function genererePriestEgenskap(){
+    let strengthMax = 50
+    let strengthMin = 1
+    let agilityMax = 50
+    let agilityMin = 1
+    let staminaMax = 75
+    let staminaMin = 10
+    let intellectMax = 90
+    let intellectMin = 10
+    let spiritMax = 100
+    let spiritMin = 40
+
+
+    let resultat = minRandom(strengthMax,strengthMin,agilityMax,agilityMin,staminaMax,staminaMin,intellectMax,intellectMin,spiritMax,spiritMin)
+
+    let nyEgenskap = document.createElement("li")
+
+    nyEgenskap.innerHTML = "Priest: " + resultat
+
+    document.getElementById("egenskap").appendChild(nyEgenskap)
+}
+
+function generereShamanEgenskap(){
+    let strengthMax = 60
+    let strengthMin = 3
+    let agilityMax = 60
+    let agilityMin = 5
+    let staminaMax = 70
+    let staminaMin = 15
+    let intellectMax = 95
+    let intellectMin = 15
+    let spiritMax = 90
+    let spiritMin = 30
+
+
+    let resultat = minRandom(strengthMax,strengthMin,agilityMax,agilityMin,staminaMax,staminaMin,intellectMax,intellectMin,spiritMax,spiritMin)
+
+    let nyEgenskap = document.createElement("li")
+
+    nyEgenskap.innerHTML = "Shaman: " + resultat
+
+    document.getElementById("egenskap").appendChild(nyEgenskap)
+}
+
+function generereMageEgenskap(){
+    let strengthMax = 45
+    let strengthMin = 2
+    let agilityMax = 90
+    let agilityMin = 15
+    let staminaMax = 65
+    let staminaMin = 8
+    let intellectMax = 85
+    let intellectMin = 20
+    let spiritMax = 95
+    let spiritMin = 20
+
+
+    let resultat = minRandom(strengthMax,strengthMin,agilityMax,agilityMin,staminaMax,staminaMin,intellectMax,intellectMin,spiritMax,spiritMin)
+
+    let nyEgenskap = document.createElement("li")
+
+    nyEgenskap.innerHTML = "Mage: " + resultat
+
+    document.getElementById("egenskap").appendChild(nyEgenskap)
+}
+
+function generereWarlockEgenskap(){
+    let strengthMax = 95
+    let strengthMin = 30
+    let agilityMax = 100
+    let agilityMin = 20
+    let staminaMax = 75
+    let staminaMin = 10
+    let intellectMax = 70
+    let intellectMin = 5
+    let spiritMax = 70
+    let spiritMin = 5
+
+
+    let resultat = minRandom(strengthMax,strengthMin,agilityMax,agilityMin,staminaMax,staminaMin,intellectMax,intellectMin,spiritMax,spiritMin)
+
+    let nyEgenskap = document.createElement("li")
+
+    nyEgenskap.innerHTML = "Warlock: " + resultat
+
+    document.getElementById("egenskap").appendChild(nyEgenskap)
+}
+
+function minRandom(strMax, strMin, agMax, agMin, staMax, staMin, intMax, intMin, spiMax, spiMin) {
+    let strength = Math.floor(Math.random() * (strMax - strMin + 1) ) + strMin
+    let agility = Math.floor(Math.random() * (agMax - agMin + 1) ) + agMin
+    let stamina = Math.floor(Math.random() * (staMax - staMin + 1) ) + staMin
+    let intellect = Math.floor(Math.random() * (intMax - intMin + 1) ) + intMin
+    let spirit = Math.floor(Math.random() * (spiMax - spiMin + 1) ) + spiMin
+
+    let egenskap = "strength: " + strength + " / " + "agility: " + agility + " / " + "stamina: " + stamina + " / " + "intellect: " + intellect + " / " + "spirit: " + spirit
+
+    return (egenskap)
+}
+
+/*
+function generereEgenskaper(){
+    for(let i = 0; i < 100; i++) {
+        let strength = Math.floor(Math.random() * (100 - 40 + 1) ) + 40;
+        let agility = Math.floor(Math.random() * (90 - 5 + 1) ) + 5;
+        let stamina = Math.floor(Math.random() * (80 - 45 + 1) ) + 45;
+        let intellect = Math.floor(Math.random() * (60 - 5 + 1) ) + 5;
+        let spirit = Math.floor(Math.random() * (50 - 1 + 1) ) + 1;
+
+        let nyEgenskap = document.createElement("li")
+
+        nyEgenskap.innerHTML = ("Strength: " + strength + " / Agility: " + agility + " / stamina " + stamina + " / intellect " + intellect + " ( spirit: " + spirit)
+
+        document.getElementById("egenskap").appendChild(nyEgenskap)
+    }
+}
+*/
+function slettListe(){
+    document.getElementById("egenskap").innerHTML = ""
+}
+
+</script>
+    
+</body>
+</html>
